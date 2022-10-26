@@ -1,0 +1,37 @@
+/* if img doesn't show up turn off night eye app
+without background-size:cover the image wouldn't fit properly
+*/
+body {
+  margin: 0;
+  background-image: url("images/remote.jpg");
+  background-size: cover;
+}
+
+nav {
+  /* The 0 left- right lets the nav touch the edges 
+  50 px top lets the nav come a little down from the top
+  0 bottom bc it's not needed
+  */
+  padding: 50px 0 0;
+  text-align: center;
+}
+
+nav ul {
+  /*  X, Y, blur, spread radius, and color. */
+  box-shadow: 0 0 30px 10px white, inset 0 0 21px white;
+}
+
+nav ul li {
+  /* without this property it stacks one on top the other and the disc list shows up,*/
+  display: inline-block;
+}
+
+nav ul li a {
+  /* to separate the nav links from each other */
+  padding: 50px;
+  color: #ffffff;
+  font-size: 35px;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  letter-spacing: 5px;
+}
